@@ -1,0 +1,39 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cyalniz <cyalniz@student.42kocaeli.co      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/30 13:38:01 by cyalniz           #+#    #+#             */
+/*   Updated: 2021/11/30 19:22:24 by cyalniz          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <unistd.h>
+#include <stdio.h>//silinecek
+
+void	ft_ultimate_div_mod(int *a, int *b)
+{
+	int	bos;
+
+	*a = 10;//silincek ???
+	*b = 5;// silinecek ???
+	bos = *a;
+	*a = *a / *b;
+	*b = bos % *b;
+	printf("%d\n", *a);//silinecek
+	printf("%d", *b);//silinecek
+}
+
+//main silinecek
+//int	main()
+//{
+//	int s1;
+//	int s2;
+//	int *p1;
+//	int *p2;
+//	p1 = &s1;
+//	p2 = &s2;
+//	ft_ultimate_div_mod(p1, p2);
+//}
